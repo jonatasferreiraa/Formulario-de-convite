@@ -43,4 +43,9 @@ main {
     background-color: var(--shape-body);
     padding: 5rem 8.125rem;
   }
+
+  & h1 {
+    font: var(--title-md);
+    color: var(--color-text-heading);
+  }
 }

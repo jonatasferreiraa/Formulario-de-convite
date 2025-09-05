@@ -27,7 +27,72 @@
       </aside>
       <main>
         <div class="main-container">
-          <form method="post" enctype="multipart/form-data"></form>
+          <h1>Crie seu convite</h1>
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="event-info">
+              <legend>
+                <img src="/assets/icons/calendar.svg" alt="" />Sobre o evento
+              </legend>
+              <div class="input-wrapper">
+                <label for="name-event">Título</label>
+                <input
+                  type="text"
+                  name="name-event"
+                  id="name-event"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="start">ínicio</label>
+                <input type="datetime-local" name="start" id="start" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="end">Fim</label>
+                <input type="datetime-local" name="end" id="end" />
+              </div>
+
+              <div class="input-wrapper">
+                <label>Tipo</label>
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <img src="/assets/icons/building-2.svg" alt="" />
+                    <input type="radio" name="in-person" id="in-person" />
+                    <label for="in-person">Presencial</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <img src="/assets/icons/video.svg" alt="" />
+                    <input type="radio" name="online" id="online" />
+                    <label for="in-person">Online</label>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="local-event">Local</label>
+                  <input
+                    type="text"
+                    name="local-event"
+                    id="local-event"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+
+                <div class="textarea-wrapper">
+                  <label for="event-info">Descrição</label>
+                  <textarea
+                    name="event-info"
+                    id="event-info"
+                    cols="30"
+                    rows="5"
+                    placeholder="Escreva sobre os detalhes do evento "
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>
