@@ -1,0 +1,19 @@
+input,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+
+  padding: 1.08rem 1rem;
+  background-color: var(--input-base);
+
+  font: var(--text);
+  color: var(--input-placeholder);
+}
+
+label {
+  font: var(--text-sm);
+  color: var(--color-text-body);
+  padding-bottom: 0.75rem;
+}
