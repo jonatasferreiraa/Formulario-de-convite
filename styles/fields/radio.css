@@ -1,24 +1,44 @@
 .radio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--input-base);
   border-radius: 0.5rem;
+  padding: 4px;
   border: 1px solid var(--input-stroke);
-  padding: 0.25rem;
-  gap: 0.25rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.radio-inner {
+  padding: 10.5px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
 
   & input {
     all: unset;
+    position: absolute;
+    inset: 0;
   }
 
-  & .radio-inner {
-    padding: 0.75rem 2rem;
-    border-radius: 0.25rem;
+  & .radio-icon {
+    fill: #869198;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1rem;
+    height: 1rem;
   }
 
-  & label {
-    color: var(--color-text-bold);
-    border-radius: 0.5rem;
+  &:has(:checked) {
+    background-color: var(--shape-button);
+    font-weight: 600;
+  }
+
+  &:has(:checked) .radio-icon {
+    fill: var(--brand-light);
   }
 }
