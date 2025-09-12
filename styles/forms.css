@@ -42,16 +42,6 @@ legend {
   & .input-local-wrapper {
     grid-column: 3 / 5;
   }
-
-  & .input-name-wrapper,
-  & .datetime-wrapper,
-  & .radio-wrapper,
-  & .input-wrapper,
-  & .input-local-wrapper,
-  & .textarea-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .customization-info {
