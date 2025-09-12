@@ -1,21 +1,27 @@
 .radio-container {
   background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
   padding: 4px;
-  border: 1px solid var(--input-stroke);
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   column-gap: 4px;
 }
 
 .radio-inner {
-  padding: 10.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8125rem;
   border-radius: 4px;
-  width: 100%;
-  text-align: center;
+
   position: relative;
-  cursor: pointer;
-  transition: background 0.3s;
+
+  & label {
+    all: unset;
+  }
 
   & input {
     all: unset;
@@ -25,9 +31,8 @@
 
   & .radio-icon {
     fill: #869198;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block;
+    margin-right: 8px;
 
     width: 1rem;
     height: 1rem;
