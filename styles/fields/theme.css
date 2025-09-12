@@ -1,0 +1,50 @@
+.input-wrapper {
+  & label {
+    all: unset;
+
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+.theme-whapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.card-theme {
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+
+  display: grid;
+  justify-items: center;
+
+  padding: 0.25rem;
+
+  position: relative;
+
+  & input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & label {
+    all: unset;
+    margin-top: 0.5rem;
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
+  &:has(:checked) {
+    outline: none;
+    border: 2px solid var(--brand-light);
+  }
+}
