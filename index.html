@@ -46,7 +46,7 @@
 
               <div class="datetime-wrapper">
                 <div class="input-wrapper">
-                  <label for="start">ínicio</label>
+                  <label for="start">Início</label>
                   <input type="datetime-local" name="start" id="start" />
                 </div>
 
@@ -58,7 +58,8 @@
 
               <div class="radio-wrapper">
                 <label>Tipo</label>
-                <div class="radio-container">
+
+                <span class="radio-container">
                   <div class="radio-inner">
                     <svg
                       class="radio-icon"
@@ -107,7 +108,7 @@
                     />
                     <label for="online">Online</label>
                   </div>
-                </div>
+                </span>
               </div>
 
               <div class="input-local-wrapper">
@@ -129,6 +130,11 @@
                   rows="5"
                   placeholder="Escreva sobre os detalhes do evento "
                 ></textarea>
+
+                <div class="error-message">
+                  <img src="assets/icons/error-icon.svg" alt="" />
+                  <span>Error message</span>
+                </div>
               </div>
             </fieldset>
           </form>

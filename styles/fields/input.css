@@ -9,7 +9,8 @@ textarea {
   background-color: var(--input-base);
 
   font: var(--text);
-  color: var(--input-placeholder);
+  color: var(--color-text-heading);
+  resize: none;
 }
 
 label {
@@ -24,4 +25,26 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 1px solid var(--brand-light);
+}
+
+input,
+textarea {
+  &:invalid {
+    border: 1px solid var(--danger-color);
+  }
+
+  &:invalid + .error-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font: var(--text-danger);
+    color: var(--danger-color);
+
+    margin-top: 0.5rem;
+  }
+
+  &:valid + .error-message {
+    display: none;
+  }
 }

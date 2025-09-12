@@ -16,6 +16,8 @@
   --text-sm: 400 0.875rem /160% var(--font-opensans);
   --text-xs: 400 0.75rem /160% var(--font-opensans);
 
+  --text-danger: 400 0.75rem/160% var(--font-opensans);
+
   --shape-background: #131516;
   --shape-body: #212427;
   --shape-button: #2d3136;
@@ -31,11 +33,13 @@
 
   --color-text-body: #c8cdd0;
   --color-text-heading: #f9f9f9;
+
+  --danger-color: #ff5959;
 }
 
 body {
   background-color: var(--shape-background);
-  font: var(--text-sm);
+  font: var(--text);
   color: var(--color-text-body);
 }
 
