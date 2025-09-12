@@ -44,3 +44,7 @@ h2,
 legend {
   color: var(--color-text-heading);
 }
+
+label {
+  padding-bottom: 12px;
+}
