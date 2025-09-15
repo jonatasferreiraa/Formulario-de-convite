@@ -52,7 +52,8 @@ main {
 }
 
 .customization-info,
-.contact-info {
+.contact-info,
+.action-wrapper {
   display: block;
   margin-top: 3rem;
 }

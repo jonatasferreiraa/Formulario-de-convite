@@ -1,0 +1,29 @@
+.action-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-forms {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--brand-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
