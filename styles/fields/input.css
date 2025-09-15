@@ -27,21 +27,9 @@ textarea:focus {
   border: 1px solid var(--brand-light);
 }
 
-input,
 textarea {
   &:invalid {
     border: 1px solid var(--danger-color);
-  }
-
-  &:invalid + .error-message {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    font: var(--text-danger);
-    color: var(--danger-color);
-
-    margin-top: 0.5rem;
   }
 
   &:valid + .error-message {

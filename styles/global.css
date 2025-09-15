@@ -52,3 +52,14 @@ legend {
 .input-wrapper {
   padding-top: 1.75rem;
 }
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font: var(--text-danger);
+  color: var(--danger-color);
+
+  margin-top: 0.5rem;
+}

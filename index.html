@@ -45,12 +45,12 @@
               </div>
 
               <div class="datetime-wrapper">
-                <div class="input-wrapper">
+                <div class="input-date-wrapper">
                   <label for="start">Início</label>
                   <input type="datetime-local" name="start" id="start" />
                 </div>
 
-                <div class="input-wrapper">
+                <div class="input-date-wrapper">
                   <label for="end">Fim</label>
                   <input type="datetime-local" name="end" id="end" />
                 </div>
@@ -156,6 +156,7 @@
                       name="color-event"
                       value="color-blue"
                       id="color-blue"
+                      checked
                     />
                     <div class="color" id="blue"></div>
                   </div>
@@ -278,6 +279,7 @@
                       name="theme-gift"
                       id="birth"
                       value="birth"
+                      checked
                     />
                     <label for="birth">Aníversário</label>
                   </div>
@@ -393,6 +395,53 @@
                   </div>
                 </div>
               </div>
+
+              <div class="input-style-wrapper">
+
+                <div class="style-wrapper">
+                  <label>Estilo</label>
+
+                  <input type="checkbox" id="dark" name="darkmode-toggle" class="toggle-input" />
+
+                  <div class="toggle-wrapper">
+                    
+                    <label for="dark" class="toggle-label"></label>
+                </div>
+                <label class="mode-toggle"></label>
+              </div>
+
+              <div class="input-drop-wrapper">
+
+                  <label>Foto de capa</label>
+
+                  <div class="cover-wrapper">
+                    <div class="btn-wrapper">
+                      <span class="btn-file">
+                        <img
+                          src="/assets/icons/upload.svg"
+                          alt=""
+                          class="btn-icon"
+                        />
+
+                        <label for="cover">Selecionar</label>
+                      </span>
+
+                      <div class="error-message">
+                        <img src="assets/icons/error-icon.svg" alt="" />
+                        <span>Error message</span>
+                      </div>
+
+                    </div>
+
+                    <input
+                      type="file"
+                      name="cover-photo"
+                      id="cover"
+                      value="cover"
+                      accept=".png"
+                    />
+                  </div>
+                </div>
             </fieldset>
           </form>
         </div>
