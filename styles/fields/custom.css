@@ -79,6 +79,13 @@
   align-items: center;
   gap: 0.75rem;
 
+  position: relative;
+
+  & .error-message {
+    position: absolute;
+    top: 100%;
+  }
+
   & input {
     all: unset;
     inset: 0;
@@ -90,9 +97,6 @@
 
   input[type="file"] {
     color: var(--input-placeholder);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   & .btn-file {
@@ -122,4 +126,8 @@
       all: unset;
     }
   }
+}
+
+input:valid + .error-message {
+  display: none;
 }

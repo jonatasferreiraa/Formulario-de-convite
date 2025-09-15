@@ -428,8 +428,8 @@
                   <label>Foto de capa</label>
 
                   <div class="cover-wrapper">
-                    <div class="btn-wrapper">
-                      <span class="btn-file">
+                    <div class="btn-wrapper btn-file">
+                      
                         <img
                           src="/assets/icons/upload.svg"
                           alt=""
@@ -437,22 +437,20 @@
                         />
 
                         <label for="cover">Selecionar</label>
-                      </span>
-
-                      <div class="error-message">
-                        <img src="assets/icons/error-icon.svg" alt="" />
-                        <span>Error message</span>
-                      </div>
-
+                      
                     </div>
 
                     <input
                       type="file"
                       name="cover-photo"
                       id="cover"
-                      value="cover"
                       accept=".png"
                     />
+
+                    <div class="error-message">
+                        <img src="assets/icons/error-icon.svg" alt="" />
+                        <span>Error message</span>
+                      </div>
                   </div>
                 </div>
             </fieldset>
