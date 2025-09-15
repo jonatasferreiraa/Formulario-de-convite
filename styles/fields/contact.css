@@ -1,0 +1,11 @@
+.name-contact {
+  & > input {
+    &:invalid {
+      border: 1px solid var(--danger-color);
+    }
+
+    &:valid + .error-message {
+      display: none;
+    }
+  }
+}

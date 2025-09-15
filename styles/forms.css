@@ -44,7 +44,19 @@ legend {
   }
 }
 
-.customization-info {
-  display: block;
-  margin-top: 3rem;
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  & .name-contact {
+    grid-column: 1/5;
+  }
+
+  & .mail-contact {
+    grid-column: 1/3;
+  }
+
+  & .phone-contact {
+    grid-column: 3/5;
+  }
 }
