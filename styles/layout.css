@@ -56,3 +56,9 @@ main {
   display: block;
   margin-top: 3rem;
 }
+
+.divisor {
+  margin-top: 3rem;
+  background-color: var(--input-stroke);
+  height: 1px;
+}
