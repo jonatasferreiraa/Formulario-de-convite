@@ -1,3 +1,7 @@
+.input-theme-wrapper {
+  margin-top: 1.75rem;
+}
+
 .theme-whapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
