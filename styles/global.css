@@ -49,10 +49,6 @@ legend {
   color: var(--color-text-heading);
 }
 
-.input-wrapper {
-  padding-top: 1.75rem;
-}
-
 .error-message {
   display: flex;
   align-items: center;
