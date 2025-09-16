@@ -51,5 +51,9 @@ Projeto desenvolvido com intuito de **estudo de formulários e práticas de HTML
 ---
 
 ## 📜 Licença  
-Projeto desenvolvido como parte da **formação Rocketseat** 🚀  ![2025-09-16-09-41-43](https://github.com/user-attachments/assets/9e552538-79d1-446e-965c-e23bd511bf68)
+Projeto desenvolvido como parte da **formação Rocketseat** 🚀  
+
+---
+
+![2025-09-16-09-41-43](https://github.com/user-attachments/assets/9e552538-79d1-446e-965c-e23bd511bf68)
 ![2025-09-16-09-42-31](https://github.com/user-attachments/assets/ee154bdd-761d-4f65-ab1e-b11f25764e00)
